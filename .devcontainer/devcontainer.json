@@ -6,5 +6,6 @@
 //    "workspaceFolder": "./exercises",
     // Privileged flag is needed to run docker-in-docker, the volume
     // is needed or docker build will fail
-    "runArgs": ["--volume=/var/lib/docker", "--privileged"]
+    "runArgs": ["--volume=/var/lib/docker", "--privileged"],
+    "postCreateCommand": ". ../setup.sh"
 }
