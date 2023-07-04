@@ -5,4 +5,4 @@ RUN apk add --no-cache git
 RUN apk add --no-cache docker-engine
 RUN apk add --no-cache docker-cli
 RUN apk add --no-cache docker-compose
-ADD ./exercises /exercises
+ADD ../exercises /exercises
