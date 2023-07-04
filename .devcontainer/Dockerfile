@@ -1,8 +1,7 @@
 FROM alpine:3.18
 
 RUN apk update
-RUN apk add --no-cache git
-RUN apk add --no-cache docker-engine
-RUN apk add --no-cache docker-cli
-RUN apk add --no-cache docker-compose
+RUN apk add --no-cache git docker-engine docker-cli docker-compose
+
+RUN mkdir /exercises
 ADD ../exercises /exercises
